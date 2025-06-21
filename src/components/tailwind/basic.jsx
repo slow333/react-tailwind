@@ -2,9 +2,9 @@ import React from 'react'
 
 function BasicTw() {
   return (
-    <div>
-      <h1>tailwind 기본: 패딩, 마진, 라운드, pre 등</h1>
+    <>
       <section>
+        <h1 className='m-0'>tailwind 기본: 패딩, 마진, 라운드, pre 등</h1>
         <p className="text-lg font-bold"> 글자 크기는 text-[lg|4xl|sm] or text-[44px] 같이 함 </p>
 
         <p className="text-blue-400">색지정은 text-blue-400, text-[#aaa] 같이함</p>
@@ -65,7 +65,7 @@ function BasicTw() {
     적용되는 특수 문자 { }, ` `, " ", ' ', \n , <br/>br tag는 줄바꿈으로 인식
     </div> */}
   </section>
-  </div>
+  </>
   )
 }
 

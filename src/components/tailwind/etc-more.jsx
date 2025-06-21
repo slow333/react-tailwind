@@ -3,20 +3,21 @@ import React from 'react'
 function EtcMore() {
   return (
     <div>
-      <h1 classNameName='text-3xl'>Accordian, Click, checkbox color, Fluid Text, Hilight, Caret</h1>
+      <h1 className='text-3xl'>Accordian, Click, checkbox color, Fluid Text, Hilight, Caret</h1>
       <section>
         <h2>button click 하면 내용 바꾸기, javascript 없음</h2>
         <div className="card flex flex-col items-center">
           사용은 className에 이름만 적으면됨<br/>
-          <button id="toggleDark" onclick="document.body.classNameList.toggle('dark')">
+          <button>
+          {/* <button onClick="() => document.body.classNameList.toggle('dark')"> */}
             Toggle Dark Mode
           </button>
         </div>
-        <div className="flex flex-col text-blue-700 ml-2">
+        {/* <div className="flex flex-col text-blue-700 ml-2">
           <label><input type="checkbox" checked /> Browser default</label>
           <label><input type="checkbox" className="accent-pink-600 me-2" /> 
             accent-color-depth하면 checkbox color가 바뀜</label>
-        </div>
+        </div> */}
 
         <h2>Fluid Text</h2>
         <div className="md:text-5xl lg:text-3xl">화면 크기에 따른 변화</div>
@@ -43,10 +44,12 @@ function EtcMore() {
         </div>
 
         <h2>Accordian</h2>
-        <div className="max-w-lg mx-auto p-8">
-          <details className="open:bg-green-900 open:ring-3 open:ring-black/5 open:rounded-2xl open:shadow-lg p-6">
-            <summary className="text-lg leading-5 text-slate-900 font-semibold select-none">
-              summary. Lorem, ipsum dolor sit 
+        <div className="max-w-auto mx-15 p-8">
+          <details className="open:bg-green-900 open:ring-3 open:ring-black/5 
+          open:rounded-2xl open:shadow-lg p-6">
+            <summary className="text-lg leading-5 text-slate-900 font-semibold select-none 
+              cursor-pointer hover:text-teal-300">
+              cursor-pointer on summary
             </summary>
             <div className="mt-3 text-sm leading-6 text-slate-100 dark:text-slate-400">
               <p>
@@ -55,8 +58,8 @@ function EtcMore() {
             </div>
           </details>
           <details className="open:bg-violet-400 open:ring-1 open:ring-black/5 open:shadow-lg p-6 rounded-lg border-1" open>
-            <summary className="text-xl leading-5 text-slate-900 dark:text-white font-semibold">
-              summary. Lorem, ipsum dolor sit amet
+            <summary className="text-xl leading-5 text-slate-900 dark:text-white font-semibold hover:text-teal-700">
+              border on details, hover:text-teal-700 on summary
             </summary>
             <div className="mt-3 text-sm leading-6 text-slate-100 dark:text-slate-400">
               <p>

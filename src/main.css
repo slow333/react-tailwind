@@ -10,7 +10,7 @@
 @layer base {
   h1 {
     @apply text-4xl font-bold text-center py-2 rounded-xl
-      bg-gray-200 text-gray-700 dark:text-gray-700 mt-5 mb-3;
+      bg-gray-200 text-gray-700 dark:text-gray-700 ;
   }
   h2 {
     @apply text-3xl font-bold text-center
@@ -26,7 +26,7 @@
     @apply text-[16px] text-gray-500;
   }
   section {
-    @apply p-5 border-1 border-gray-500 rounded-lg m-2;
+    @apply p-5 border-1 border-gray-500 rounded-lg mx-4 absolute top-20 w-[96%];
   }
   button {
     @apply px-4 py-2 text-sm font-medium mt-8 text-blue-600 bg-blue-200 rounded-md;

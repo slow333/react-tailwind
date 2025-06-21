@@ -8,9 +8,6 @@ import MyRoutes from './components/navbar/router';
 function App() {
   return (
     <BrowserRouter>
-      <div className='text-xl text-amber-600 text-center py-2 font-semibold'>
-        Hello react tailwind
-      </div>
       <Header />
       <Navbar />
       <MyRoutes />

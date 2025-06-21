@@ -1,8 +1,8 @@
 function Note() {
   return (
-    <div className="px-5">
-      <h3 className="text-start">react 생성: rfce</h3>
+    <>
       <section>
+      <h3 className="text-start">react 생성: rfce</h3>
         <h1 className="text-teal-900">tailwind 설치</h1>
         <h3>npm install tailwindcss @tailwindcss/postcss postcss</h3>
         <h3>/postcss.config.mjs</h3>
@@ -39,7 +39,7 @@ export default config;`}</pre>
     </Routes>
   </BrowserRouter>`}</pre>
       </section>
-    </div>
+    </>
   )
 }
 

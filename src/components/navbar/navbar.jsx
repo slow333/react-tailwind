@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div>
+    <div className='fixed w-full z-100'>
       <nav className="bg-gray-800 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between flex-1 ">
           <div className="flex shrink-0 items-center mr-8">

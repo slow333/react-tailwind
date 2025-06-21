@@ -1,22 +1,22 @@
 function TwCustome() {
   return (
-    <div>
-      <h1>사용자 정의 className, tag style 지정</h1>
+    <>
       <section>
-        <h2>설정 파일: /src/main.css </h2>
+        <h1>사용자 정의 className, tag style 지정</h1>
+        <h2 className="mt-5 mb-3">설정 파일: /src/main.css </h2>
         <div className="text-3xl font-bold">사용자정의 색상 이름 지정해서 사용하기</div>
-    <pre>
+        <pre>
     {`
   @theme {
     --color-chestnut: #92343; 
   }
   `}
-    </pre>   
-    <div className="text-chestnut text-2xl">사용자 정의 색상 지정 사용은 text-chestnut 하면됨</div>
-    <div className="text-chestnut text-2xl">theme variable에 가면 색 뿐만아니라 폰트 등 많음</div>
+        </pre>   
+        <div className="text-chestnut text-2xl">사용자 정의 색상 지정 사용은 text-chestnut 하면됨</div>
+        <div className="text-chestnut text-2xl">theme variable에 가면 색 뿐만아니라 폰트 등 많음</div>
 
-    <div className="text-3xl font-bold">사용자 지정 스타일 만들기(className 지정)</div>
-    <pre>
+        <div className="text-3xl font-bold">사용자 지정 스타일 만들기(className 지정)</div>
+        <pre>
   {`
   @layer components {
     .card {
@@ -25,11 +25,11 @@ function TwCustome() {
     }
   }
   `}  
-    </pre>
+        </pre>
 
-    <h2>기본 tag에 대해 스타일 적용하기</h2>
-    <h3>h1, h2, pre 등에 대해 적용해 놓으면됨</h3>
-    <pre>{`
+        <h2>기본 tag에 대해 스타일 적용하기</h2>
+        <h3>h1, h2, pre 등에 대해 적용해 놓으면됨</h3>
+        <pre>{`
   @layer base {
     h1 {
       @apply text-3xl font-bold text-center text-green-900;
@@ -49,16 +49,16 @@ function TwCustome() {
     }
   }
   `}  
-    </pre>
-    <h2>사전 정의된 컴포넌트 라이브러리</h2>
-    <h3>사전 정의된 컴포넌트 라이브러리는 shadcn/ui 에 가면 많이 있음</h3>
-    <pre>{`
+        </pre>
+        <h2>사전 정의된 컴포넌트 라이브러리</h2>
+        <h3>사전 정의된 컴포넌트 라이브러리는 shadcn/ui 에 가면 많이 있음</h3>
+        <pre>{`
   import {Button} from "@/components/ui/button"
   <Button variant="outline">Button &lt;/Button>
   `}
-    </pre>
+        </pre>
       </section>
-    </div>
+    </>
   )
 }
 

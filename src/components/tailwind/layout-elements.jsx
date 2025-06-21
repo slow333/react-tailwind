@@ -1,10 +1,9 @@
 
-
 function LayoutEls() {
   return (
-    <div>
-      <h1>Flex, Grid</h1>
+    <div className="w-full grid place-content-center">
       <section>
+        <h1>Flex, Grid</h1>
         <div className="text-4xl text-center mt-5">flex</div>
         <p>flex는 기본이 row, flex-col 해야 컬럼으로 지정, justify, items 로 정렬</p>
         <div className="text-3xl">flex flex-col</div>
