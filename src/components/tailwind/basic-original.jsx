@@ -4,6 +4,7 @@ function BasicTw() {
 
   return (
     <>
+      <main>
         <h1 className='m-0'>tailwind 기본: 패딩, 마진, 라운드, pre 등</h1>
         <p className="text-lg font-bold"> 글자 크기는 text-[lg|4xl|sm] or text-[44px] 같이 함 </p>
 
@@ -12,7 +13,7 @@ function BasicTw() {
         <div className='border-5 border-blue-200 text-center p-2'>
           경계넓이 border-[1|2|3...], 경계색 border-[green|blue|red]-[100|200|...] 같이함</div>
 
-        <div className="font-bold text-xl p-5">
+        <div className="font-bold text-2xl p-5">
           font weight는 font-[thin|extralight|light|normal|medium|semibold|bold|extrabold|black] 하면됨
         </div>
         <hr/>
@@ -69,8 +70,9 @@ function BasicTw() {
       javascript 객체를 통해서 적용
     적용되는 특수 문자 { }, ` `, " ", ' ', \n , <br/>br tag는 줄바꿈으로 인식
     </div> */}
+  </main>
   </>
   )
 }
 
-export default BasicTw
+// export default BasicTw

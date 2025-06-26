@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { RiToggleFill } from "react-icons/ri";
+import { RiToggleLine } from "react-icons/ri";
 
 function Navbar() {
   const location = useLocation().pathname;
@@ -28,7 +29,7 @@ function Navbar() {
       flex h-16 items-center justify-between">
         <div className="flex shrink-0 items-center mr-8">
           <Link to={'/'}>
-            <h1 className="bg-emerald-400 w-10 h-10 rounded-full shadow-2xl grid place-content-center">
+            <h1 className=" bg-emerald-400 w-10 h-10 rounded-full shadow-2xl grid place-content-center">
               <div className="bg-teal-700 w-7 h-7 rounded-full grid place-content-center">
                 <div className="animate-ping bg-green-100 w-4 h-4 rounded-full"></div>
               </div>
@@ -37,16 +38,34 @@ function Navbar() {
         </div>
         <div className='rowCenterItems gap-1'>
           <Link
-            to='/brand'
+            to='/basic'
             className='navItem'
           >
-            Brand App
+            BASIC
           </Link>
           <Link
-            to='/tw-pages'
+            to='/layout-elements'
             className='navItem'
           >
-            Tailwind
+            Layout Els
+          </Link>
+          <Link
+            to='/media-handle'
+            className='navItem'
+          >
+            Media
+          </Link>
+          <Link
+            to='/tw-customize'
+            className='navItem'
+          >
+            TW-Custom
+          </Link>
+          <Link
+            to='/etc-more'
+            className='navItem'
+          >
+            MORE
           </Link>
           <Link
             to='/acme'

@@ -1,7 +1,7 @@
 function TwCustome() {
   return (
     <>
-      <section>
+      {/* <main> */}
         <h1>사용자 정의 className, tag style 지정</h1>
         <h2 className="mt-5 mb-3">설정 파일: /src/main.css </h2>
         <div className="text-3xl font-bold">사용자정의 색상 이름 지정해서 사용하기</div>
@@ -12,10 +12,9 @@ function TwCustome() {
   }
   `}
         </pre>   
-        <div className="text-chestnut text-2xl">사용자 정의 색상 지정 사용은 text-chestnut 하면됨</div>
-        <div className="text-chestnut text-2xl">theme variable에 가면 색 뿐만아니라 폰트 등 많음</div>
-
-        <div className="text-3xl font-bold">사용자 지정 스타일 만들기(className 지정)</div>
+        <p className="text-chestnut text-xl">사용자 정의 색상 지정 사용은 text-chestnut 하면됨</p>
+        <p className="text-chestnut text-xl">theme variable에 가면 색 뿐만아니라 폰트 등 많음</p>
+        <p className="text-2xl font-bold">사용자 지정 스타일 만들기(className 지정)</p>
         <pre>
   {`
   @layer components {
@@ -57,7 +56,7 @@ function TwCustome() {
   <Button variant="outline">Button &lt;/Button>
   `}
         </pre>
-      </section>
+      {/* </main> */}
     </>
   )
 }

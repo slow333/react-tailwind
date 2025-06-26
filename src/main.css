@@ -25,11 +25,14 @@
   pre {
     @apply text-[16px] text-gray-500;
   }
-  section {
-    @apply p-5 border-1 border-gray-500 rounded-lg mx-4 absolute top-20 w-[96%];
+  main {
+    @apply p-5 absolute top-12 w-full;
   }
   button {
     @apply px-4 py-2 text-sm font-medium mt-8 text-blue-600 bg-blue-200 rounded-md;
+  }
+  section {
+    @apply mt-6 mb-12 scroll-mt-20;
   }
 }
 
@@ -39,16 +42,34 @@
      ring-amber-400/5 dark:bg-black;
   }
   .navItem {
-    @apply rounded-md px-3 py-2 text-sm font-bold 
+    @apply rounded-md py-1 px-2 text-base font-bold 
         text-gray-300 hover:bg-gray-700 hover:text-white;
   }
-  .centerItem {
-    @apply flex space-x-4 items-center justify-center;
+  .rowCenterItems {
+    @apply flex justify-between items-end gap-4;
+  }
+  .colCenterItems {
+    @apply flex flex-col justify-between items-center space-y-6 mb-5;
+  }
+  .contentCenter {
+    @apply grid place-content-center;
   }
 }
 
-.currentNav {
+.currentUrl {
   background-color: chocolate;
+}
+
+@keyframes slide-down{
+  0% { transform: scaleY(0) }
+  80% { transform: scaleY(1.4)}
+  100% { transform: scaleY(1)}
+}
+#mobile-menu {
+  animation-name: slide-down;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 /* section::before {

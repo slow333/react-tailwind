@@ -3,7 +3,7 @@ import React from 'react'
 function MediaHandle() {
   return (
     <>
-      <section>
+      {/* <main> */}
         <h1>화면 크기에 따른 변경</h1>
         <h1 className='text-xl font-bold mt-2'>tailwind는 기본적으로 md하면 medium 화면보다 크면 다 적용되는 방식임
         </h1>
@@ -40,7 +40,7 @@ function MediaHandle() {
         <div className="bg-white dark:bg-black text-black dark:text-white">
           다크 모드에서 배경 검정, 글자 흰색 : dark:bg-black text-black dark:text-white
         </div>
-      </section>
+      {/* </main> */}
     </>
   )
 }

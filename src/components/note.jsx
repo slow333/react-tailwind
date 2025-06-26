@@ -1,7 +1,8 @@
 function Note() {
+  
   return (
     <>
-      <section>
+      <main>
       <h3 className="text-start">react 생성: rfce</h3>
         <h1 className="text-teal-900">tailwind 설치</h1>
         <h3>npm install tailwindcss @tailwindcss/postcss postcss</h3>
@@ -20,10 +21,11 @@ export default config;`}</pre>
         <p>실시간으로 변환해주는 스크립트</p>
       <pre>package.json 
   {` =>>
-  "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i ./src/globals.css -o ./src/styles.css --watch"
-   }
-  실행은 npm tailwind` }</pre>
+"scripts": {
+  "tailwind": "npx @tailwindcss/cli -i ./src/globals.css -o ./src/styles.css --watch"
+  }
+실행은 npm tailwind` }</pre>
+
         <h2>navbar 구성</h2>
         <h3>npm install react-router-dom</h3>
         <p></p>
@@ -38,7 +40,7 @@ export default config;`}</pre>
       ...
     </Routes>
   </BrowserRouter>`}</pre>
-      </section>
+      </main>
     </>
   )
 }

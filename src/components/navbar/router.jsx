@@ -1,23 +1,27 @@
 import { Routes, Route } from 'react-router-dom';
-import BasicTw from '../tailwind/basic';
-import LayoutEls from '../tailwind/layout-elements';
-import MediaHandle from '../tailwind/media-handle';
-import TwCustome from '../tailwind/tw-custumize';
-import EtcMore from '../tailwind/etc-more';
-import Note from '../note';
+import Note from './../note';
+import {TwPages} from "./../tailwind/index";
+// import {BasicTw, LayoutEls, MediaHandle, EtcMore, TwCustome, TwPages} from "./../tailwind/index";
+import { Article, Brand, CTA, Feature } from "./../jsMastery/index";
+import Acme from "./../acme/acme"
 
 function MyRoutes() {
   return (
-    <div>
+    <>
       <Routes>
-        <Route path="/" element={<Note />} />
-        <Route path="/basic" element={<BasicTw />} />
-        <Route path="/layout-elements" element={<LayoutEls />} />
-        <Route path="/media-handle" element={<MediaHandle />} />
-        <Route path="/tw-customize" element={<TwCustome />} />
-        <Route path="/etc-more" element={<EtcMore />} />
+        <Route index path="/" element={<Note />} />
+        {/* tailwind practice pages */}
+        <Route path="/tw-pages" element={<TwPages />} />
+        {/* acme rocket page */}
+        <Route path="/acme" element={<Acme />} />
+        {/* === JavaScript Mastery : Build and Deploy 4 Modern React Apps and
+          Get Hired as a Frontend Developer | Full 10-Hour Course === */}
+        <Route path="/brand" element={<Brand />} />  
+        <Route path="/article" element={<Article />} />  
+        <Route path="/CTA" element={<CTA />} />  
+        <Route path="/feature" element={<Feature />} />  
       </Routes>
-    </div>
+    </>
   )
 }
 
